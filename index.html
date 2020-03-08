@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<script src="client.js"></script>
+
+All visitors suppose to see messages from each other.
+
+<form name="publish">
+    <input type="text" name="message" />
+    <input type="submit" value="Send" />
+</form>
+
+<div id="subscribe">
+</div>
+
+<script>
+  new PublishForm(document.forms.publish, 'publish');
+  // Add a "random" query string parameter to avoid possible problems with caching.
+  new SubscribePane(document.getElementById('subscribe'), `subscribe?random=${ Math.random() }`);
+</script>

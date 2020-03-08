@@ -1,0 +1,11 @@
+{
+    "name": "long-polling-sample",
+    "version": "0.1.0",
+    "scripts": {
+        "start": "node long-poll-server.js"
+    },
+    "dependencies": {
+        "node-static": "^0.7.11",
+        "uuid": "^3.3.3"
+    }
+}
